@@ -12,7 +12,7 @@ using Object = UnityEngine.Object;
 [AddRandomizerMenu("Robotics/Shelf Box Randomizer")]
 public class ShelfBoxRandomizerShim : RandomizerShim
 {
-    public GameObjectParameter boxParameter;
+    public CategoricalParameter<GameObject> boxParameter;
     [Range(0, 1f)] public float boxSpawnChance = 0.5f;
     FloatParameter boxSpawnParam = new FloatParameter { value = new UniformSampler(0, 1f) };
     readonly Vector3 boxScale = new Vector3(0.9f, 0.9f, 0.9f);

@@ -3,7 +3,7 @@ using Unity.Robotics.PerceptionRandomizers.Shims;
 using UnityEngine;
 using UnityEngine.Perception.Randomization.Parameters;
 using UnityEngine.Perception.Randomization.Randomizers;
-using UnityEngine.Perception.Randomization.Randomizers.SampleRandomizers.Tags;
+using UnityEngine.Perception.Randomization.Randomizers.Tags;
 using UnityEngine.Perception.Randomization.Samplers;
 
 /// <summary>

@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Perception.GroundTruth;
+
 
 namespace Unity.Simulation.Warehouse {
     public class DebrisSpawner : MonoBehaviour
@@ -78,7 +78,7 @@ namespace Unity.Simulation.Warehouse {
                 obj.transform.rotation = Random.rotation;
                 obj.GetComponent<Renderer>().material = Resources.Load<Material>($"Materials/Debris");
 
-                var lab = obj.AddComponent<Labeling>();
+                var lab = obj.AddComponent<UnityEngine.Perception.GroundTruth.LabelManagement.Labeling>();
                 lab.labels.Add("debris");
 
                 var rb = obj.AddComponent<Rigidbody>();
